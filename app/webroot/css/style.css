@@ -196,13 +196,21 @@ color: #000000;
   margin-top: 5px;
 }
 
-#resume-left2 {
+/*#resume-left2 {
   float: left;
 }
 
 #resume-right2 {
   float: left;
   margin-left: 20px;
+}*/
+#resume-part2-title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.resume-part2-title-cn{
+  font-size: 18px;
 }
 
 #resume-text {
@@ -212,8 +220,24 @@ color: #000000;
 }
 
 #resume-context-part2 {
-  margin-left: 50px;
   padding-top: 200px;
+  line-height: 1.3em;
+}
+
+.resume-block-text-cn {
+  font-family: Arial;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.resume-block-text{
+  padding-left:200px;
+}
+
+.resume-block-image{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .resume-book {
@@ -390,31 +414,34 @@ color: #000000;
   width:680px;
 }
 
-#crit-content .cufon{
-  padding-bottom: 3px;
+.crit-content .cufon{
+  padding-bottom: 6px;
 }
 
-#crit-author .cufon{
+.crit-author .cufon{
   padding-bottom: 15px;
 }
 
-#crit-title {
+.crit-title {
   padding-bottom: 30px;
 }
 
-#cn-crit-author {
+.cn-crit-author {
   padding-bottom: 15px;
 }
 
-#crit-content{
+.crit-content{
   position: relative;
+  line-height: 1.5em;
 }
 #criticism-content{
-    position: relative;
-    padding-top: 100px;
+  position: relative;
+  padding-top: 100px;
 }
 
-
+.criticism-context{
+  margin-bottom: 160px;
+}
 
 .crit-cn-title-font {
   font-family: 宋体,SimSum;

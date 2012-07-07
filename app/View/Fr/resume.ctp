@@ -13,20 +13,22 @@
   </div>  
   
     
+  <!-- part2 -->
   <div id="resume-context-part2">
-    <div id="resume-left2" <?php if(!empty($cur_resume['intro2'])){?>
-         style="background: url('/img/resume/<?php echo $cur_resume['head2']?>') no-repeat;
-        <?php $size = getimagesize(WWW_ROOT."/img/resume/".$cur_resume['head2']);  
-        echo "width:".$size[0]."px;"."height:".$size[1]."px;"; ?>"<?php }?>></div>
-    <div id="resume-right2">
-      <div id="resume-text-title2"><?php echo $cur_resume['title2'] ?></div>
-      <div id="resume-text"><?php echo $cur_resume['intro2']?></div>
-    </div>
+    <div id="resume-part2-title"><?php echo $cur_resume['title2'] ?></div>
+      <?php foreach ($blocks as $key => $block) { ?>
+      <div class="resume-block">
+      <div class="resume-block-text"><?php echo $block['text'] ?></div>
+        <?php if($block['image']!="") { ?>
+          <div class="resume-block-image"><img src="<?php echo $block['image'] ?>" /></div>
+        <?php } ?>
+      </div>
+      <?php }  ?>
     <br clear=all>
   </div>  
 
   <div id="resume-context-part3">
-    <div id="book-title" style="text-align:center;margin-top:50px;margin-bottom:20px;">BOOKS</div>
+    <div id="book-title" style="text-align:center;margin-top:50px;margin-bottom:20px;">LIVRES</div>
     <div id="resume-line1" class="resume-line">
       <div class="resume-book" style="position:relative;left:130px;">
         <div class="resume-book-img"><img src="/img/resume/<?php echo $cur_resume['books']['book'][0]['image'] ?>"></div>

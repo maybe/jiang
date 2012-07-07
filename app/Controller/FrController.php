@@ -66,6 +66,13 @@ class FrController extends AppController
     
     $this->set('cur_resume', $cur_resume);
     $this->set('total_page',$itemcount); 
+    
+    $block = array();
+    foreach ($cur_resume['intro2']['block'] as $value) {
+      array_push($block,$this->_replace_special($value));
+    }
+    
+    $this->set('blocks', $block); 
   }
   
    public function works()
@@ -85,29 +92,12 @@ class FrController extends AppController
   public function criticism()
   { 
     $all_criticism = $this->parsed_xml['root']['fr']['criticism']['item'];
-    $itemcount = 1;
-    if (empty($all_criticism['title']))
-      $itemcount = count($all_criticism);
-
-    $index = 0;
-    if ($this->request->is('get')&&!empty($this->request->query["p"])) 
-    {
-      $index = (int)($this->request->query["p"]);
-      if($index>$itemcount||$index<0||$index=="")
-        $index = 0;
+    
+    foreach ($all_criticism as $key => $value) {
+      $all_criticism[$key] = $this->_replace_special($value);
     }
-    
-    $this->set('index', $index);
-    
-    if ($itemcount==1)
-      $cur_criticism = $all_criticism;
-    else
-      $cur_criticism = $all_criticism[$index];
-    
-    $cur_criticism = $this->_replace_special($cur_criticism);
-    
-    $this->set('cur_criticism', $cur_criticism);
-    $this->set('total_page',$itemcount);
+        
+    $this->set('criticisms', $all_criticism);
   }
   
   public function travels()

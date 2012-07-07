@@ -16,15 +16,17 @@ class AppController extends Controller {
     if (is_array($var)){
       foreach ($var as $key => $item) {
         if (!is_array($item)){
-          $item = mb_ereg_replace(" ","&nbsp;",$item);
-          $var[$key] = mb_ereg_replace("\/n","<br />",$item);
+          $var[$key]  = mb_ereg_replace("\/k","&nbsp;",$item);
+          $var[$key]  = mb_ereg_replace("\s", "&nbsp;", $var[$key]);
+          $var[$key] = mb_ereg_replace("\/n","<br />",$var[$key]);
         }
       }
     }
     else
     {
+        $var = mb_ereg_replace("\/k","&nbsp;",$var);
         $var = mb_ereg_replace("\s","&nbsp;",$var);
-        $var= mb_ereg_replace("\/n","<br />",$var);
+        $var = mb_ereg_replace("\/n","<br />",$var);
     }
     return $var;
   }

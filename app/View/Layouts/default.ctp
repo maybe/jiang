@@ -47,29 +47,29 @@
       Cufon.replace("#foot-word", {fontFamily : "Bembo Std", fontSize:"14px", color:"#000000"}); 
 
       <?php if($cur_controller == 'cn'){?>
-        Cufon.replace("#crit-author",{fontFamily : "Book Antiqua", fontSize:"20pt", color:"#000000"}); 
+        Cufon.replace(".crit-author",{fontFamily : "Book Antiqua", fontSize:"20pt", color:"#000000"}); 
         Cufon.replace("#book-title", {fontFamily : "Bauer Bodoni Std", fontSize:"25px", color:"#000000"}); 
       <?php }?>
 
       <?php if($cur_controller == 'fr'){?>
         Cufon.replace("#sidebar-navi",{fontFamily : "DINPro-Regular", fontSize:"13pt", color:"#000000"}); 
         Cufon.replace("#resume-text-title", {fontFamily : "Bauer Bodoni Std", fontSize:"14px", color:"#000000"}); 
-        Cufon.replace("#resume-text-title2", {fontFamily : "Bauer Bodoni Std", fontSize:"13px", color:"#000000"}); 
+        Cufon.replace("#resume-part2-title", {fontFamily : "Bauer Bodoni Std", fontSize:"16px", color:"#000000"}); 
         Cufon.replace("#book-title", {fontFamily : "Bauer Bodoni Std", fontSize:"25px", color:"#000000"}); 
-        Cufon.replace("#crit-title",{fontFamily : "Lucida Sans Unicode", fontSize:"25pt", color:"#000000"}); 
-        Cufon.replace("#crit-author",{fontFamily : "Book Antiqua", fontSize:"20pt", color:"#000000"}); 
-        Cufon.replace("#crit-content",{fontFamily : "Lucida Sans Unicode", fontSize:"12pt", color:"#000000"}); 
+        Cufon.replace(".crit-title",{fontFamily : "Lucida Sans Unicode", fontSize:"25pt", color:"#000000"}); 
+        Cufon.replace(".crit-author",{fontFamily : "Book Antiqua", fontSize:"20pt", color:"#000000"}); 
+        Cufon.replace(".crit-content",{fontFamily : "Lucida Sans Unicode", fontSize:"12pt", color:"#000000"}); 
       <?php }?>
 
       <?php if($cur_controller == 'en'){?>
         Cufon.replace("#sidebar-navi", {fontFamily : "Helvetica LT Std", fontSize:"13pt", color:"#000000"}); 
         Cufon.replace("#resume-text-title", {fontFamily : "Bauer Bodoni Std", fontSize:"14px", color:"#000000"}); 
-        Cufon.replace("#resume-text-title2", {fontFamily : "Bauer Bodoni Std", fontSize:"13px", color:"#000000"}); 
+        Cufon.replace("#resume-part2-title", {fontFamily : "Bauer Bodoni Std", fontSize:"16px", color:"#000000"}); 
         Cufon.replace("#book-title", {fontFamily : "Bauer Bodoni Std", fontSize:"25px", color:"#000000"}); 
 
-        Cufon.replace("#crit-title",{fontFamily : "Lucida Sans Unicode", fontSize:"25pt", color:"#000000"}); 
-        Cufon.replace("#crit-author",{fontFamily : "Book Antiqua", fontSize:"20pt", color:"#000000"}); 
-        Cufon.replace("#crit-content",{fontFamily : "Lucida Sans Unicode", fontSize:"12pt", color:"#000000"}); 
+        Cufon.replace(".crit-title",{fontFamily : "Lucida Sans Unicode", fontSize:"25pt", color:"#000000"}); 
+        Cufon.replace(".crit-author",{fontFamily : "Book Antiqua", fontSize:"20pt", color:"#000000"}); 
+        Cufon.replace(".crit-content",{fontFamily : "Lucida Sans Unicode", fontSize:"12pt", color:"#000000"}); 
       <?php }?>
 
       $("#art").mouseout(function(){  
