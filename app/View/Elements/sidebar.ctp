@@ -18,11 +18,11 @@
     </div>
     <div id="sidebar-works" style="display: none;">
       <ul>
-          <li><a href="/">布上水墨</a></li>
-          <li><a href="/">纸上水墨</a></li>
-          <li><a href="/">荷花</a></li>
-          <li><a href="/">瓶花</a></li>
-          <li><a href="/">书法</a></li>
+          <li><a href="/<?php echo $cur_controller ?>/works?index=0&cat=1">布上水墨</a></li>
+          <li><a href="/<?php echo $cur_controller ?>/works?index=0&cat=2">纸上水墨</a></li>
+          <li><a href="/<?php echo $cur_controller ?>/works?index=0&cat=3">荷花</a></li>
+          <li><a href="/<?php echo $cur_controller ?>/works?index=0&cat=4">瓶花</a></li>
+          <li><a href="/<?php echo $cur_controller ?>/works?index=0&cat=5">书法</a></li>
       </ul>
     </div>
   </div>

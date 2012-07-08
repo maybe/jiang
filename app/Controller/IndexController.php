@@ -18,8 +18,8 @@ class IndexController extends AppController
   public function beforeFilter() {
     parent::beforeFilter();
     
-    $file = ROOT. "/app/Config/lang.xml";
-    $parsed_xml = Xml::build($file);
+//    $file = ROOT. "/app/Config/lang.xml";
+//    $parsed_xml = Xml::build($file);
     //var_dump($parsed_xml);
   }
   

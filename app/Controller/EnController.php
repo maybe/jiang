@@ -79,15 +79,46 @@ class EnController extends AppController
   public function works()
   {
     $index = 0;
-    if ($this->request->is('get')&&!empty($this->request->query["index"])) 
+    $cat = 1;
+    
+    if ($this->request->is('get')&&(!empty($this->request->query["index"])||$this->request->query["index"]==0)&&!empty($this->request->query['cat'])) 
     {
       $index = $this->request->query["index"];
+      $cat = $this->request->query["cat"];
     }
     $this->set('index', $index);
+    $this->set('cat', $cat);
     
-    $works = $this->parsed_xml['root']['en']['works']['item'];
-    $this->set('works', $works);
-    
+    if ($cat == 1)
+    {
+      $works = $this->works_xml['root']['en']['works']['clothart']['item'];
+      $this->set('works', $works);
+      $this->set('catname','布上水墨|');
+    }
+    else if ($cat == 2)
+    {
+      $works = $this->works_xml['root']['en']['works']['paperart']['item'];
+      $this->set('works', $works);
+      $this->set('catname','纸上水墨|');
+    }    
+    else if ($cat == 3)
+    {
+      $works = $this->works_xml['root']['en']['works']['lotus']['item'];
+      $this->set('works', $works);
+      $this->set('catname','荷花|');
+    }  
+    else if ($cat == 4)
+    {
+      $works = $this->works_xml['root']['en']['works']['vase']['item'];
+      $this->set('works', $works);
+      $this->set('catname','瓶花|');
+    }   
+    else if ($cat == 5)
+    {
+      $works = $this->works_xml['root']['en']['works']['calligraphy']['item'];
+      $this->set('works', $works);
+      $this->set('catname','书法|');
+    }    
   }
   
   public function criticism()
