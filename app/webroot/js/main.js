@@ -32,6 +32,34 @@ $(document).ready(function(){
   var timer_right;
   var timer_thumb;
   
+  $("#li-a-works").mouseover(function(){
+    $("#sidebar-works").show();
+  });
+  
+  $(".li-a-other").mouseover(function(){
+    $("#sidebar-works").hide();
+  });
+  
+  $("#sidebar-back").mouseout(function(e) {
+//
+//    var cur_mouse_x = e.originalEvent.layerX ||e.originalEvent.x|| 0;
+//    var cur_mouse_y = e.originalEvent.layerY||e.originalEvent.y || 0;
+//    
+//    frame_left = $(this).position().left;
+//    frame_top = $(this).position().top;
+//    
+//    
+//    frame_width = $(this).width();
+//    frame_height = $(this).height();
+//    
+//    if(cur_mouse_x<frame_left||cur_mouse_y<frame_top||cur_mouse_x>frame_left+frame_width||cur_mouse_y>frame_top+frame_height)
+//    {      
+////      alert(cur_mouse_y);
+////      alert(frame_top);
+      $("#sidebar-works").hide();
+  //  }
+  });
+  
   $("#hor-bar li").mouseout(function(){
     $("#thumb").css("display","none");
   });
@@ -144,7 +172,7 @@ $(document).ready(function(){
 
         element_right.fadeOut();
 
-        element_left.css("left", frame_left+20);
+        element_left.css("left", frame_left-50);
         element_left.css("top", frame_top+frame_height/2-30);
         element_left.css("cursor","pointer");
 
@@ -166,7 +194,7 @@ $(document).ready(function(){
 
         element_left.fadeOut();      
 
-        element_right.css("left", frame_left+frame_width-50);
+        element_right.css("left", frame_left+frame_width);
         element_right.css("top", frame_top+frame_height/2-30);
         element_right.css("cursor","pointer");
 
@@ -187,7 +215,7 @@ $(document).ready(function(){
     
     frame_width = $(this).width();
     frame_height = $(this).height();
-    if(cur_mouse_x<frame_left||cur_mouse_y<frame_top||cur_mouse_x>frame_left+frame_width||cur_mouse_y>frame_top+frame_height)
+    if(cur_mouse_x<frame_left-50||cur_mouse_y<frame_top||cur_mouse_x>frame_left+frame_width+50||cur_mouse_y>frame_top+frame_height)
     {
       $("#left-arrow").fadeOut();
       $("#right-arrow").fadeOut();

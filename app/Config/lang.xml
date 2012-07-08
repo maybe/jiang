@@ -87,8 +87,8 @@
         </item>
       </resume>
       <works>
-        <item>1.png</item>
-        <item>2.png</item>
+        <item type="0">1.png</item>
+        <item type="1">2.png</item>
         <item>3.png</item>
         <item>4.png</item>
         <item>6.png</item>

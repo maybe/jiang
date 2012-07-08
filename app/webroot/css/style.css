@@ -8,8 +8,8 @@ font-family:Candara,Sans-Serif;
 font-size:10pt;
 margin:0;
 padding:0;
-width: expression( document.body.clientWidth < 1200 ? "1200" : "auto" );
-min-width: 1200px;
+/*width: expression( document.body.clientWidth < 1200 ? "1200" : "auto" );
+min-width: 1200px;*/
 } 
 
 a {
@@ -36,8 +36,9 @@ color: #000000;
   left: 0px;
   position: fixed;
   right: 0px;
-  z-index: 1000;
+  /*z-index: 1000;*/
   width: 220px;
+  height:300px;
 }
 
 #content {
@@ -129,13 +130,56 @@ color: #ffffff;
 
 #sidebar-navi {
   text-align: left;
+  position: relative;
+  width: 180px;
+  height: 160px;
+}
+
+#sidebar-back{
+  width:200px;
+  height:260px;
+  position: absolute;
+  top:0px;
+  left: 0px;
+}
+
+#sidebar-works{
+  font-size: 12px;
+  position: absolute;
+  left: 70px;
+  top: 85px;
+}
+
+#sidebar-works ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+#sidebar-works li {
+  margin-bottom: 9px;
+  border-left: solid 2px #000000;
+}
+
+#sidebar-works a {
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+#sidebar-works a:visited {
+color: #000000;
+}
+#sidebar-works a:link {
+color: #000000;
+}
+
+#sidebar-works a:active{
+  color:#000000;
 }
 
 #sidebar-navi ul {
   list-style: none;
   padding-left: 20px;
 }
-
 #sidebar-navi li {
   margin-bottom: 9px;
 }
@@ -143,6 +187,7 @@ color: #ffffff;
 #sidebar-navi a {
   text-decoration: none;
   padding-right: 5px;
+  width:60px;
 }
 
 #sidebar-navi a:visited {
@@ -339,6 +384,7 @@ color: #000000;
 }
 
 #show-frame {
+  margin-left: 30px;
 }
 
 #left-arrow {

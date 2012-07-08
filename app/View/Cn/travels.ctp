@@ -1,5 +1,5 @@
 <div id="travels-content" class="centered" style="<?php 
-    $size = getimagesize(WWW_ROOT."/img/travels/".$travels[$index]); echo "height:".($size[1]+100)."px;margin-left:-400px;padding-bottom:50px;margin-top:-".($size[1]/2+50)."px;position:absolute;top:50%;left:50%;"; ?>">
+    $size = getimagesize(WWW_ROOT."/img/travels/".$travels[$index]); echo "height:".($size[1]+100)."px;margin-left:-".($size[0]+200>950?$size[0]/2+50:400)."px;padding-bottom:50px;margin-top:-".($size[1]/2+50)."px;position:absolute;top:50%;left:50%;width:".($size[0]+200>950?$size[0]+200:950)."px;"; ?>">
   <div id="img-context">
   <?php 
     $size = getimagesize(WWW_ROOT."/img/travels/".$travels[$index]);
