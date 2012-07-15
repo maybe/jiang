@@ -92,31 +92,31 @@ class FrController extends AppController
     {
       $works = $this->works_xml['root']['cn']['works']['clothart']['item'];
       $this->set('works', $works);
-      $this->set('catname','布上水墨');
+      $this->set('catname','布上水墨|');
     }
     else if ($cat == 2)
     {
       $works = $this->works_xml['root']['cn']['works']['paperart']['item'];
       $this->set('works', $works);
-      $this->set('catname','纸上水墨');
+      $this->set('catname','纸上水墨|');
     }    
     else if ($cat == 3)
     {
       $works = $this->works_xml['root']['cn']['works']['lotus']['item'];
       $this->set('works', $works);
-      $this->set('catname','荷花');
+      $this->set('catname','荷花|');
     }  
     else if ($cat == 4)
     {
       $works = $this->works_xml['root']['cn']['works']['vase']['item'];
       $this->set('works', $works);
-      $this->set('catname','瓶花');
+      $this->set('catname','瓶花|');
     }   
     else if ($cat == 5)
     {
       $works = $this->works_xml['root']['cn']['works']['calligraphy']['item'];
       $this->set('works', $works);
-      $this->set('catname','书法');
+      $this->set('catname','书法|');
     }  
   }
   

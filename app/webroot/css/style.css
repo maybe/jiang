@@ -146,7 +146,7 @@ color: #ffffff;
 #sidebar-works{
   font-size: 12px;
   position: absolute;
-  left: 60px;
+  left: 100px;
   top: 85px;
   z-index: 1000;
 }
@@ -234,12 +234,14 @@ color: #000000;
 #resume-context {
   margin-left: 50px;
   padding-top: 150px;
+  height: 400px;
 }
 
 #resume-text {
   font-family: Arial;
   font-size: 11px;
   margin-top: 5px;
+  width: 265px;
 }
 
 /*#resume-left2 {
@@ -270,6 +272,11 @@ color: #000000;
   line-height: 1.3em;
 }
 
+.resume-block-text {
+  font-family: Arial;
+  font-size: 11px;
+}
+
 .resume-block-text-cn {
   font-family: Arial;
   font-size: 12px;
@@ -281,7 +288,7 @@ color: #000000;
 }
 
 .resume-block-image{
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -296,6 +303,7 @@ color: #000000;
 .resume-line {
   position: relative;
   margin-bottom: 50px;
+  margin-left: 50px;
 }
 
 #works-content {
@@ -329,6 +337,7 @@ color: #000000;
 
 .vert-bar-works {
     width: 40px;
+    font-family: 黑体,SimHei,"Heiti SC";
 }
 
 #vert-bar {
@@ -336,6 +345,7 @@ color: #000000;
   width: 18px;
   position: relative;
   margin-left: 16px;
+  font-family: 黑体,SimHei,"Heiti SC";
 }
 
 
@@ -359,6 +369,7 @@ color: #000000;
   margin-top:5px;
   margin-left: 20px;
   display: inline-block;
+  font-family: 黑体,SimHei,"Heiti SC";
 }
 
 #hor-bar-works{
@@ -367,6 +378,7 @@ color: #000000;
   margin-top:5px;
   margin-left: 20px;
   display: inline-block;
+  font-family: 黑体,SimHei,"Heiti SC";
 }
 
 #hor-bar-works li {
@@ -544,6 +556,7 @@ color: #000000;
 .crit-cn-content-font {
   font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif,黑体,SimHei,"Heiti SC";
   font-size: 12px;
+  line-height: 24px;
 }
 
 .fr-navi {

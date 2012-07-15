@@ -48,7 +48,6 @@
 
       <?php if($cur_controller == 'cn'){?>
         Cufon.replace(".crit-author",{fontFamily : "Book Antiqua", fontSize:"20pt", color:"#000000"}); 
-        Cufon.replace("#book-title", {fontFamily : "Bauer Bodoni Std", fontSize:"25px", color:"#000000"}); 
       <?php }?>
 
       <?php if($cur_controller == 'fr'){?>

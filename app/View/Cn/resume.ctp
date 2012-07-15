@@ -27,7 +27,7 @@
   </div>  
 
   <div id="resume-context-part3">
-    <div id="book-title" style="text-align:center;margin-top:50px;margin-bottom:20px;">BOOKS</div>
+    <div id="book-title" style="text-align:center;margin-top:150px;margin-bottom:20px;font-size: 18px">出版书籍</div>
     <div id="resume-line1" class="resume-line">
       <div class="resume-book" style="position:relative;left:130px;">
         <div class="resume-book-img"><img src="/img/resume/<?php echo $cur_resume['books']['book'][0]['image'] ?>"></div>

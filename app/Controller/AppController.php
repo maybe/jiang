@@ -21,7 +21,7 @@ class AppController extends Controller {
       foreach ($var as $key => $item) {
         if (!is_array($item)){
           $var[$key]  = mb_ereg_replace("\/k","&nbsp;",$item);
-          $var[$key]  = mb_ereg_replace("\s", "&nbsp;", $var[$key]);
+          $var[$key]  = mb_ereg_replace(" ", "&nbsp;", $var[$key]);
           $var[$key] = mb_ereg_replace("\/n","<br />",$var[$key]);
         }
       }
@@ -29,7 +29,7 @@ class AppController extends Controller {
     else
     {
         $var = mb_ereg_replace("\/k","&nbsp;",$var);
-        $var = mb_ereg_replace("\s","&nbsp;",$var);
+        $var = mb_ereg_replace(" ","&nbsp;",$var);
         $var = mb_ereg_replace("\/n","<br />",$var);
     }
     return $var;
