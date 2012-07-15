@@ -173,9 +173,18 @@
  *
  */
 	Configure::write('Session', array(
-		'defaults' => 'php'
+		'defaults' => 'cake',
+    'ini' => array(
+      'session.cookie_secure' => false
+    ),
+    'timeout' => 4320 //3 days  
 	));
 
+  
+  
+  
+  
+  
 /**
  * The level of CakePHP security.
  */

@@ -1,5 +1,6 @@
 <?php
 App::uses('Controller', 'Controller');
+App::uses('Xml', 'Utility'); 
 
 class AppController extends Controller {
 
