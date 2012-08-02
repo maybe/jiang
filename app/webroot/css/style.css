@@ -24,14 +24,16 @@ color: #000000;
 
 
 #sidebar {
+  position: relative;
   float: left;
   margin-bottom: 60px;
   overflow: hidden;
   width: 220px;
+  z-index: 1000;
 }
 
 #sidebar-content {  
-  background: none repeat scroll 0 0 #EAEAEA;
+  background: none repeat scroll 0 0 transparent;
   top: 165px;
   left: 0px;
   position: fixed;
@@ -280,11 +282,10 @@ color: #000000;
 .resume-block-text-cn {
   font-family: Arial;
   font-size: 12px;
-  margin-top: 5px;
 }
 
 .resume-block-text{
-  padding-left:200px;
+  padding-left:20px;
 }
 
 .resume-block-image{
@@ -311,7 +312,7 @@ color: #000000;
   zoom: 1;
   width: 950px;
   text-align: center;
-  z-index: 1000;
+  z-index: 800;
 }
 
 #img-context {

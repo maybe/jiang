@@ -15,14 +15,34 @@
   <!-- part2 -->
   <div id="resume-context-part2">
     <div id="resume-part2-title"><?php echo $cur_resume['title2'] ?></div>
+    <div id="resume-part2-content">
+      <div style="float:left">
+        <div><img src="/img/resume/resume_all.jpg"/></div>
+      </div>
+      <div style="float:left">
       <?php foreach ($blocks as $key => $block) { ?>
       <div class="resume-block">
-      <div class="resume-block-text"><?php echo $block['text'] ?></div>
-        <?php if($block['image']!="") { ?>
+      <div class="resume-block-text">
+        <?php $text =  $block['text'];
+          if(mb_ereg("\/c(\w+)\/c", $text, $reg))
+          {
+            //echo $reg[1];
+            $tmp = "&nbsp";
+            if ($reg[1]>=10)
+              $tmp = "";
+            $replace_h = "&nbsp;<div style='padding-left:2px;display:inline-block;width:16px;height:15px;background:url(/img/resume/kuang.png) no-repeat;'>".$tmp.$reg[1]."</div>";
+            $text = mb_ereg_replace("\/c\w+\/c",$replace_h,$text);
+          }
+          echo $text;
+        ?>
+      </div>        <?php if($block['image']!="") { ?>
           <div class="resume-block-image"><img src="<?php echo $block['image'] ?>" /></div>
         <?php } ?>
       </div>
       <?php }  ?>
+      </div>
+      <br clear="all" />
+    </div>
     <br clear=all>
   </div>  
 

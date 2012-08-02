@@ -59,7 +59,7 @@
         else if(cat_index == 4)
         {
           var str = '';
-          for(i=0;i<5;i++)
+          for(i=0;i<4;i++)
           {
             str += '<option value='+(i+1)+'>Image'+(i+1)+'</option>';
           }
