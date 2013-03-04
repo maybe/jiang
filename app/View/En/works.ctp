@@ -17,7 +17,7 @@
     </div>
     <div id="left-arrow" next="<?php echo $index==0?"":"/en/works?index=".($index-1)."&cat=".$cat ?>"></div>
     <div id="right-arrow" next="<?php echo $index==count($works)-1?"":"/en/works?index=".($index+1)."&cat=".$cat ?>"></div>
-    <div id="hor-bar-works" style="width:<?php echo sizeof($works)*24 + (strlen($catname)/2-1)*20; ?>px;">
+    <div id="hor-bar-works" style="width:<?php echo sizeof($works)*28 + (strlen($catname)/2-1)*20; ?>px;">
       <div id="hor-index-works"><?php echo $catname;?></div>
       <ul>
       <?php foreach($works as $key=>$item): ?>
