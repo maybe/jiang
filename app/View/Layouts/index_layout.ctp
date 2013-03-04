@@ -3,7 +3,21 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		Ink Art of JIANG SHAN QING
+      <?php 
+        if($cur_controller == 'en')
+        {
+          echo "Ink Art of JIANG SHAN QING";
+        }
+        else if ($cur_controller == 'cn') 
+        {
+          echo "蒋山青 水墨艺术";          
+        }
+        else if ($cur_controller == 'fr') 
+        {
+          echo "Ink Art of JIANG SHAN QING";          
+        }
+      ?>
+    
 	</title>
 	<?php
 		echo $this->fetch('meta');

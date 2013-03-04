@@ -17,11 +17,11 @@
     </div>
     <div id="left-arrow" next="<?php echo $index==0?"":"/fr/works?index=".($index-1)."&cat=".$cat ?>"></div>
     <div id="right-arrow" next="<?php echo $index==count($works)-1?"":"/fr/works?index=".($index+1)."&cat=".$cat ?>"></div>
-    <div id="hor-bar-works" style="width:<?php echo sizeof($works)*24 + (strlen($catname)/2-1)*20; ?>px;">
+    <div id="hor-bar-works" style="width:<?php echo sizeof($works)*28 + (strlen($catname)/2-1)*20; ?>px;">
       <div id="hor-index-works"><?php echo $catname;?></div>
       <ul>
       <?php foreach($works as $key=>$item): ?>
-        <li><a <?php if($key==$index) echo "class='hor-bar-works-select'"?>  href="<?php echo '?index='.$key."&cat=".$cat ?>"><?php echo sprintf("%02d", $key+1);?></a></li>
+        <li><a <?php if($key==$index) echo "class='hor-bar-works-select'"?>  href="<?php echo '?index='.$key."&cat=".$cat ?>"><?php echo sprintf("%s%d", $cat_zimu,$key+1);?></a></li>
       <?php endforeach;?>
         <br clear=all >
       </ul> 

@@ -8,10 +8,11 @@
         <item>評    論</item>
         <item>遊    歷</item>
         <item>工作室</item>
+        <item>書    籍</item>
       </navi>
       <resume>
         <item>
-          <head>resume_head.png</head>
+          <head>resume_head.jpg</head>
           <title>JIANG SHANGQING</title>
           <intro>
             个人艺术简历：
@@ -70,7 +71,11 @@
               <text>2002     作品参加西安艺术博览会/n              入编《中国当代艺苑》/n              主持《澳门日报》副刊专栏/n/n2000     编辑《画坛巨子》等书籍二十七种/n/n1999    《解放日报》庆澳门回归大展/n              世界艺术家庆澳门回归大联展/n/n1998    《蒋山青画集》（中国文联出版公司出版）/n              入编《华人艺术家大典》、《当代中国艺术家》/n              西泠印社95周年社员作品展/n/n1997   《蒋启韶篆刻》（上海书店出版社出版）/n              获准加入西冷印社成为社员/n              香港回归艺术展/n/n1996     韩国亚细亚艺术招待展/n              美国旧金山全球华人艺术大展/n/n1995     广州国际艺术家度假展/n              95上海册页大展/n              韩国亚细亚艺术招待展/n/n1994     澳门文化广场个人展/n/n1993     珠海个人展/n/n1988     珠海书法篆刻个人展/n              中日文化交流展/n             《海上中青年画家集萃》副主编/n              香港《明报月刊》封二篆刻专版/c11/c</text>
               <image></image>
             </block>
-          </intro2>
+          </intro2>      
+        </item>
+      </resume>
+      <books>
+        <item>
           <books>
             <book><title>蒋启韶书信集</title><image>book_1.png</image></book>
             <book><title>幽墨</title><image>book_2.png</image></book>
@@ -84,9 +89,9 @@
             <book><title>墨说</title><image>book_10.png</image></book>
             <book><title>蒋启韶篆刻</title><image>book_11.png</image></book>
             <book><title>山青画册</title><image>book_12.png</image></book>
-          </books>        
+          </books>  
         </item>
-      </resume>
+      </books>
       <criticism>
         <item>
           <title>水墨的交流</title>
@@ -270,10 +275,11 @@
         <item>criticism</item>
         <item>travels</item>
         <item>studio</item>
+        <item>books</item>
       </navi>
       <resume>
         <item>
-          <head>resume_head.png</head>
+          <head>resume_head.jpg</head>
           <title>JIANG SHANGQING</title>
           <intro> Born  in  1961,  /nJiang  Shanqing  learned  the  art  of  calligraphy,  /npainting,  seal cutting  and  literature  with  Master  /nQian  Juntao.  He  is  listed  in  Dictionary  of Famous/nChinese Artists, Dictionary of Chinese Artists,    /nDictionary of Chinese Artists in the World, /nDictionary of Seal Cuttings of China, /nDictionary of Works of Chinese  Artists,  /nContemporary  Paintings  of  China,  Modern  Seal  /nCuttings  of Shanghai, etc. </intro>
           <head2>resume_intro2.png</head2>
@@ -362,6 +368,10 @@
               <image></image>
             </block>
           </intro2>
+        </item>
+      </resume>  
+      <books>
+        <item>
           <books>
             <book><title>蒋启韶书信集</title><image>book_1.png</image></book>
             <book><title>幽墨</title><image>book_2.png</image></book>
@@ -375,10 +385,9 @@
             <book><title>墨说</title><image>book_10.png</image></book>
             <book><title>蒋启韶篆刻</title><image>book_11.png</image></book>
             <book><title>山青画册</title><image>book_12.png</image></book>
-
-          </books>
+          </books>  
         </item>
-      </resume>  
+      </books>
       <criticism>
         <item>
           <title>Communicating Through Ink</title>
@@ -534,10 +543,11 @@
         <item>Commentaires</item>
         <item>Voyages</item>
         <item>Atelier</item>
+        <item>Livres</item>
       </navi>
       <resume>
         <item>
-          <head>resume_head.png</head>
+          <head>resume_head.jpg</head>
           <title>JIANG SHANGQING</title>
           <intro>Né en 1961 dans la province de Zhejiang, Jiang Shanqing/n a eu comme mentor Maitre Qian Juntao avec qui /nil a appris l’art de la caligraphie, la peinture de lavis à/n l’encre de Chine, l’art de Gravure des Sceaux et la/n littérature. Jiang Shanqing fait partie de l’Association /nde Sceaux de Xiling et apparaît dans de différents /nlivres comme les « Celebres Artistes de la Chine /nContemporaine », Dictionnaire de l’Artistes Chinois, /nDictionnaire de l’Artistes Chinois dans le Monde, /nDictionnaire d’Artistes de Gravure des Sceaux de la Chine, /nDictionnaire de Celébrités Chinoises dans l’Art et la /nCulture, Dictionnaire d’Oeuvres des Artistes Chinois, /nl’Art de la Caligraphie et de la Peinture Chinoise /nContemporaine, Dictionnaire de Gravure des Sceaux /nContemporain de Shanghai, etc./n/nPublications：/nGravure des Sceaux de Jiang Shanqing ; Peintre Jiang /nShanqing ; Album de Peintures de Shanqing ; Album /nde Peintures de Jiang Shanqing ; Album de Calligraphie, /nPeintures et Gravure des Sceaux de Jiang Shanqing; /nAlbum de Peintures de l’Exposition au Macao 2004; /nJiang Shanqing – l’Esprit de l’Encre ; Oeuvres Selectionnées /nde Peintres Contemporains -- Jiang Shanqing; /nl’Etang ; l’Encre Qui Parle ; Vases et Fleurs peints /nà l’encre par Jiang Shanqing ; Mystère de /nl’Encre, etc. </intro>
           <head2>resume_intro2.png</head2>
@@ -670,6 +680,10 @@
               <image></image>
             </block>
           </intro2>
+        </item>
+      </resume>
+      <books>
+        <item>
           <books>
             <book><title>蒋启韶书信集</title><image>book_1.png</image></book>
             <book><title>幽墨</title><image>book_2.png</image></book>
@@ -683,10 +697,9 @@
             <book><title>墨说</title><image>book_10.png</image></book>
             <book><title>蒋启韶篆刻</title><image>book_11.png</image></book>
             <book><title>山青画册</title><image>book_12.png</image></book>
-
-          </books>
+          </books>  
         </item>
-      </resume>
+      </books>
       <criticism>
         <item>
           <title> JIANG SHANQING/ne i segni della modernità

@@ -21,7 +21,7 @@
       <div id="hor-index-works"><?php echo $catname;?></div>
       <ul>
       <?php foreach($works as $key=>$item): ?>
-        <li><a <?php if($key==$index) echo "class='hor-bar-works-select'"?>  href="<?php echo '?index='.$key."&cat=".$cat ?>"><?php echo sprintf("%02d", $key+1);?></a></li>
+        <li><a <?php if($key==$index) echo "class='hor-bar-works-select'"?>  href="<?php echo '?index='.$key."&cat=".$cat ?>"><?php echo sprintf("%s%d", $cat_zimu,$key+1);?></a></li>
       <?php endforeach;?>
         <br clear=all >
       </ul> 
